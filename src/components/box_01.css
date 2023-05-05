@@ -1,0 +1,39 @@
+
+.box-container {
+    width: 180px;
+    height: 95px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 5px 8px 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+
+}
+.ico {
+    width: 50px;
+    position: absolute;
+    height: 60px;
+    background-color: rgb(194, 209, 129);
+    transform: rotate(22deg);
+    left: -15px;
+    transform-origin: 50% 50%;
+    bottom: -20px;
+    box-shadow: 5px 8px 30px rgb(11, 111, 204);
+    opacity: 0.5;
+    border-radius: 3px;
+    
+
+}
+
+.user-ic {
+  
+    font-size: 20px;
+    transform: rotate(-22deg);
+    transform-origin: 50% 50%;
+   
+   
+
+
+}

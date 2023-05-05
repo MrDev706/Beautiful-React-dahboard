@@ -1,0 +1,16 @@
+.ic-bx {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.ic-ap {
+    font-size: 27px;
+}
+.btn {
+    padding: 2px 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}

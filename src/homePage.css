@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+body {
+  
+    margin: 0 50px;
+    height: 190vh;
+   
+    background-color: #fff;
+   
+}
+
+.containerx {
+   display: flex;
+ 
+   
+  
+}
+.containerx .sidebar {
+   
+    flex: 0.25;
+   
+    
+   
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 40px;
+    
+   
+    flex-direction: column;
+    
+ 
+}
+.sidebar .acc {
+   
+
+}
+.containerx .page-body {
+   
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+    padding: 10px 40px;
+    background-color: rgba(0,0,0,0.1);
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-radius: 50px 0;
+}
+.containerx .page-body .nav {
+   
+    width: 100%;
+    margin: 10px 0;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.containerx .page-body .dash {
+    width: 100%;
+    padding: 0 10px;
+    margin: 10px 0;
+    
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.dash .dash-title {
+    
+    
+    
+}
+.containerx .page-body .box1 {
+   
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+    flex-wrap: wrap;
+}
+
+.containerx .page-body .box3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box-sm {
+    width: 180px;
+    height: 100px;
+    
+    margin: auto;
+
+}
+
+
+.box-lg {
+    
+    width: 48%;
+    background-color: #fff;
+
+    
+
+}
+
+.containerx .page-body .box2 {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    overflow-x: scroll;
+}
+.line-chart {
+    width: 65%;
+   
+}
+
+.box2 .icn-bx {
+    width: 220px;
+    display: flex;
+    
+    flex-direction: column;
+    
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 60%;
+    
+}
+.bx-shadow {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    box-shadow: 3px 5px 20px rgba(0,0,0,0.5);
+}
+
+.box4 {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+    
+
+}
+.box-md {
+    width: 310px;
+    height: 300px;
+    
+    padding: 20px 5px;
+   
+
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+    
+     flex: 0;
+     position: absolute;
+     display: hidden;
+     left: -300px
+    }
+    
+   
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar{
+        display: hidden;
+
+    }
+   
+   
+  }
