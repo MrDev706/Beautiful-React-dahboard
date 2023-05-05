@@ -5,22 +5,38 @@ import './home.css'
 const Home = () => {
     const checkoutHandler = async(amount)=>{
         
-        const { data: { key } } = await axios.get("http://www.localhost:4000/api/getkey")
+        // const { data: { key } } = await axios.get("http://www.localhost:4000/api/getkey")
 
-        const { data: { order } } = await axios.post("http://localhost:4000/api/checkout", {
-            amount
+        // const { data: { order } } = await axios.post("http://localhost:4000/api/checkout", {
+        //     amount
+        // })
+
+        const { data: { key } } = await axios.get("http://www.localhost:3000/user/getapi-key")
+
+        const { data: { order } } = await axios.post("http://localhost:3000/vendor/create-plan", {
+           pay: 1000,
+           plan : "xxxx"
         })
+        console.log(key)
+        console.log(order)
+
 
         const options = {
             //key: "rzp_test_FmTtwKwzpleRd",
             key,
-            amount: 100,
+            amount: order.amount,
             currency: "INR",
             name: "6 Pack Programmer",
             description: "Tutorial of RazorPay",
             image: "https://avatars.githubusercontent.com/u/25058652?v=4",
             order_id: order.id,
-            callback_url: "http://localhost:4000/api/paymentverification",
+            //callback_url:  "http://localhost:3000/user/verify-payment", //"http://localhost:4000/api/paymentverification",
+            
+            handler : async function(response){
+                let data = {response,email: "poradi500@gmail.com", vendorId: "64231f19d4f3fbd7d432a870", plan: "standard", name: "Debashish Dutta"}
+                 axios.post("http://localhost:3000/vendor/verify-payment", data).then((res) => console.log(res))
+
+            },
             prefill: {
                 name: "Gaurav Kumar",
                 email: "gaurav.kumar@example.com",
@@ -49,7 +65,7 @@ const Home = () => {
             </div>
             <h2>hey this prof</h2>
             <div className='prod-details'>
-                <button onClick={()=>checkoutHandler()}>Pay Now</button>
+                <button onClick={()=>checkoutHandler(100)}>Pay Now</button>
             </div>
         </div>
 

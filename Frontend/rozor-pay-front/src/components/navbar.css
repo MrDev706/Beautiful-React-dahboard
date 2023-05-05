@@ -1,0 +1,10 @@
+
+.right-nav {
+    display: flex;
+    position: relative;
+    width: 150px;
+    align-items: center;
+
+    justify-content: space-around;
+    
+}
