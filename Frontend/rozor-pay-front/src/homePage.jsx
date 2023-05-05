@@ -50,10 +50,15 @@ const HomePage = () => {
                 <span>
                
                 <GoReport />
+                &nbsp;
+                
+              
                   Report
+                  &nbsp;
 
                 </span>
                 <span>
+                &nbsp;
                 <MdReportGmailerrorred className='fs-5'/>
                   Export
 

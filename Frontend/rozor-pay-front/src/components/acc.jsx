@@ -19,7 +19,7 @@ function Acc({title}) {
    
     <Accordion style={{border: "none"}}defaultActiveKey={['0']} alwaysOpen>
       <Accordion.Item style={{border: "none"}}eventKey="0">
-        <Accordion.Header><FiSettings />{title}</Accordion.Header>
+        <Accordion.Header><FiSettings />&nbsp;&nbsp;{title}</Accordion.Header>
         <Accordion.Body style={{border: "none"}}>
             <div className='links' style={style1}>
           <a href='#'>Home</a>
@@ -30,7 +30,7 @@ function Acc({title}) {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item style={{border: "none"}} eventKey="1">
-        <Accordion.Header><HiUser className='fs-20'/>{title}</Accordion.Header>
+        <Accordion.Header><HiUser className='fs-20'/>&nbsp;&nbsp;{title}</Accordion.Header>
         <Accordion.Body style={{border: "none"}}>
         <div className='links' style={style1}>
           <a href='#'>men</a>
