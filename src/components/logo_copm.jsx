@@ -1,4 +1,5 @@
 import React from 'react'
+import {RiDashboardLine} from 'react-icons/ri'
 
 
 const style1 = {
@@ -9,13 +10,14 @@ const style1 = {
  "background": "transparent",
  "color" : "blue",
  "borderRadius": "10px",
-"margin" :"10px 0"
+"margin" :"15px 0",
+"font-weight": "bold"
 
 }
 function LogoCompo() {
   return (
     <>
-    <button style={style1}>Dashboard logo</button>
+    <button style={style1}><RiDashboardLine className='gap-2'/>Dashboard</button>
     </>
   )
 }

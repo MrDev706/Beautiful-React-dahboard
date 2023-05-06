@@ -17,12 +17,12 @@
     height: 60px;
     background-color: rgb(194, 209, 129);
     transform: rotate(22deg);
-    left: -15px;
+    left: -11px;
     transform-origin: 50% 50%;
-    bottom: -20px;
+    bottom: -16px;
     box-shadow: 5px 8px 30px rgb(11, 111, 204);
     opacity: 0.5;
-    border-radius: 3px;
+    border-radius: 8px;
     
 
 }
@@ -32,6 +32,7 @@
     font-size: 20px;
     transform: rotate(-22deg);
     transform-origin: 50% 50%;
+
    
    
 

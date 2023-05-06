@@ -31,6 +31,7 @@ const HomePage = () => {
               <Acc title={"funiture"} />
               
               </div>
+              <button className='btn'>Logout</button>
 
         </div>
 

@@ -14,20 +14,20 @@ const BoxFive = () => {
                       </div>
                       <div className='row d-flex align-items-center h-50'>
                           <div className='col-6  '>
-                            <span className='m-icon'><FaUserTie /></span>
+                            <span className='m-icon '><FaUserTie /></span>
                           </div>
                           <div className='col-6   '>
                             <div className='d-flex justify-content-around'>
                               <p>Gold</p>
-                              <p className='bg-warning border rounded-2'><span>14</span></p>
+                              <p className='bg-warning border px-2 rounded-2'><span>14</span></p>
                             </div>
                             <div className='d-flex justify-content-around'>
                               <p>Platinum</p>
-                              <p><span className='bg-secondary border rounded-2'>15</span></p>
+                              <p><span className='bg-secondary border px-2rounded-2'>15</span></p>
                             </div>
                             <div className='d-flex justify-content-around mb-2'>
                               <p>Titanium</p>
-                              <p><span className='bg-warning border rounded-2'>12</span></p>
+                              <p><span className='bg-warning border px-2 rounded-2'>12</span></p>
                             </div>
                           </div>
                         </div> 

@@ -3,6 +3,7 @@ import { Accordion } from 'react-bootstrap';
 import './acc.css'
 import {HiUser} from 'react-icons/hi'
 import {FiSettings} from 'react-icons/fi'
+import {Link} from 'react-router-dom'
 const style1 = {
     "display": "flex",
     "gap": "10px",
@@ -22,10 +23,10 @@ function Acc({title}) {
         <Accordion.Header><FiSettings />&nbsp;&nbsp;{title}</Accordion.Header>
         <Accordion.Body style={{border: "none"}}>
             <div className='links' style={style1}>
-          <a href='#'>Home</a>
-          <a href='#'>Service</a>
-          <a href='#'>Contact</a>
-          <a href='#'>Analytics</a>
+          <Link to='#'>Home</Link>
+          <Link to='#'>Contact</Link>
+          <Link to='#'>Reels</Link>
+          <Link to='#'>Services</Link>
           </div>
         </Accordion.Body>
       </Accordion.Item>
@@ -33,10 +34,10 @@ function Acc({title}) {
         <Accordion.Header><HiUser className='fs-20'/>&nbsp;&nbsp;{title}</Accordion.Header>
         <Accordion.Body style={{border: "none"}}>
         <div className='links' style={style1}>
-          <a href='#'>men</a>
-          <a href='#'>category</a>
-          <a href='#'>Home</a>
-          <a href='#'>Home</a>
+        <Link to='#'>Home</Link>
+          <Link to='#'>Contact</Link>
+          <Link to='#'>Reels</Link>
+          <Link to='#'>Services</Link>
           </div>
         </Accordion.Body>
       </Accordion.Item>
